@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>home</title>
+</head>
+<body bgcolor="black">
+<center>
+	<h1 style="color:purple">Add New Player</h1>
+	<form action="SaveServlet">
+		<table style="color:white">					
+			<tr>
+				<td style="font-size:20px">Name:</td>
+				<td><input type="text" name="name" required="required"/></td>
+			</tr>
+			<tr>
+				<td style="font-size:20px">Matches:</td>
+				<td><input type="number" name="match" required="required"/></td>
+			</tr>
+			<tr>
+				<td style="font-size:20px">Score:</td>
+				<td><input type="number" name="score" required="required"/></td>
+			</tr>
+			<tr>
+				<td style="font-size:20px">Wicket:</td>
+				<td><input type="number" name="wicket" required="required"/></td>
+			</tr>
+			<tr>
+				<td style="font-size:20px">Zero Out:</td>
+				<td><input type="number" name="zero" required="required"/></td>
+			</tr>
+			<tr>
+				<td style="font-size:20px">Player Type:</td>
+				<td><select name="player type" style="width: 150px">
+						<option value="" >Select player type</option>
+						<option value="Bowler">Bowler</option>
+						<option value="Batsman">Batsman</option>
+						<option value="Wicket-keeper">Wicket-Keeper</option>
+						<option value="All-Rounder">All-Rounder</option>
+				</select></td>
+			</tr>
+			<tr>
+				<td colspan="2"><input type="submit" value="Save Player" /></td>
+			</tr>
+		</table>
+	</form>
+	<br>
+	<a href="ViewServlet" style="font-size:20px">View All Players</a><br><br>
+	<a href="FinalTeam" style="font-size:20px">Final Team</a>
+</center>
+</body>
+</html>
